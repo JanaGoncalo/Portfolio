@@ -33,13 +33,13 @@ textarea::placeholder, input::placeholder{
 	padding: 25px;
 }
 .menu__foto {	
-	background-image: url("./img/fotoperfil.png");
+	background-image: url(./img/fotoperfil.png);
 	width: 300px;
 	height: 300px;
 	border-radius: 100%;
 }
 .menu__foto:hover {
-	background: url("./img/fotoperfil2.png");
+	background-image: url(./img/fotoperfil2.png);
  
 }
 .menu__principal {
