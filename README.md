@@ -2,4 +2,4 @@
 Challenge Oracle One - FrontEnd Portfólio
 
 ## Resultado
-![img](img/portfolio.jpg)
+![img](img/portfolio.gif)
