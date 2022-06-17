@@ -1,6 +1,13 @@
+:root{
+ --cor-de-fundo: black;
+ --cor-da-letra: white;
+ --cor-da-descricao: #464646;
+ --cor-de-hover: #7d0a8c;
+}
+
 body {
   box-sizing: border-box;
-  background: black;
+  background: var(--cor-de-fundo);
   font-family: 'Raleway';
   margin: 30px;
   padding: 0;
@@ -11,18 +18,12 @@ ol, ul,li {
 }
 a{
   text-decoration: none;
-  color: black;
 }
 
 textarea:focus, input:focus, select:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
-}
-
-textarea::placeholder, input::placeholder{
-  padding: 2%;
-  color:#2A7AE4;
   
 }
 .menu {
@@ -33,30 +34,30 @@ textarea::placeholder, input::placeholder{
 	padding: 25px;
 }
 .menu__foto {	
-	background-image: url("img/fotoperfil.png");
+	background: url("./img/fotoperfil.png");
 	width: 300px;
 	height: 300px;
 	border-radius: 100%;
+visibility: visible;
 }
 .menu__foto:hover {
-	background-image: url("img/fotoperfil2.png");
+	background: url("./img/fotoperfil2.png");
  
 }
 .menu__principal {
-	border: 20px;
-	border-color: aliceblue;	
+	border: 20px;	
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 }
 .menu__titulo {
-	color: #464646;
+	color: var(--cor-da-descricao);
 
 }
 .menu__descricao {
 	font-size: 22px;
 	line-height: 26px;
-	color: #464646;
+	color: var(--cor-da-descricao);
 }
 .menu__rede {
 	text-decoration: none;
@@ -64,7 +65,7 @@ textarea::placeholder, input::placeholder{
 	order: 2;
 	flex-grow: 0;
 	margin: 14px 0px;
-	color: #464646;
+	color: var(--cor-da-descricao);
 	margin-right: 20px;
 }
 .menu__rede:hover {
@@ -108,7 +109,7 @@ textarea::placeholder, input::placeholder{
   flex-direction: column;
 }
 .cabecalho {
-	background: black;
+	background: var(--cor-de-fundo);
 	width: 100%;
 }
 .cabecalho__img {
@@ -131,20 +132,20 @@ textarea::placeholder, input::placeholder{
 	display: flex;
 	text-decoration: none;
 	font-weight: bold;
-	color: white;
+	color: var(--cor-da-letra);
 	font-size: 30px;
 }
 .cabecalho__nome:hover {
-	color: #7d0a8c;
+	color: var(--cor-de-hover);
 	font-size: 35px;
 	font-weight: bold;
 }
 .cabecalho__item {
 	padding-right: 20px;
-	color: white;
+	color: var(--cor-da-letra);
 }
 .cabecalho__item:hover {
-	color: #7d0a8c;
+	color: var(--cor-de-hover);
 	font-size: 1.1em;
 	font-weight: bold;
 }
@@ -170,7 +171,7 @@ textarea::placeholder, input::placeholder{
 	}
 	.email {
 		font-family: Relaway;
-		color: white;
+		color: var(--cor-da-letra);
 		display: flex;
 		font-weight: normal;
 		align-self: flex-start;
@@ -195,7 +196,7 @@ textarea::placeholder, input::placeholder{
 }
 .contato__descricao {
 	line-height: 1.2rem;
-	color: #464646;
+	color: var(--cor-da-descricao);
 	padding: 1%;
 	width: 90%;
 }
@@ -208,7 +209,7 @@ textarea::placeholder, input::placeholder{
 	display: flex;
 	flex-direction: column;
 	line-height: 19px;
-	color: #464646;
+	color: var(--cor-da-descricao);
 	width: 90%;
 	height: 56px;
 	margin: 1%;
@@ -225,22 +226,22 @@ textarea::placeholder, input::placeholder{
 	height: 56px;
 }
 .contato__input:hover {
-	border: 1px solid #7d0a8c;
+	border: 1px solid var(--cor-de-hover);
 }
 .contato__botao {
 	background: none;
 	width: 175px;
 	height: 51px;
-	border: 1px solid #7d0a8c;
+	border: 1px solid var(--cor-de-hover);
 	border-radius: 10px;
-	color: #7d0a8c;
+	color: var(--cor-de-hover);
 	transform: 1s;
 	margin: 2%;
 }
 .contato__botao:hover {
 	cursor: pointer;
 	font-weight: bold;
-	border: 1px solid #7d0a8c;
+	border: 1px solid var(--cor-de-hover);
 	border-radius: 10px;
 	cursor: pointer;
 	font-weight: bold;
@@ -256,19 +257,19 @@ textarea::placeholder, input::placeholder{
 			background: none;
 		}
 	}.sobre {
-    background:black;
+    background:var(--cor-de-fundo);
     padding: 2rem;
     width: 97%;
     
   }
   .sobre__subtitulo {
     font-size: 32px;
-    color: white;
+    color: var(--cor-da-letra);
   }
   .sobre__texto {
     font-size: 18px;
     line-height: 30px;
-    color: #464646;
+    color: var(--cor-da-descricao);
   }
   .skills {
     display: flex;
@@ -279,7 +280,7 @@ textarea::placeholder, input::placeholder{
   .subtitulo {
     font-size: 32px;
     text-align: center;
-    color: #ffffff;
+    color: var(--cor-da-letra);
     padding-top: 1.5rem;
   }
   .skills__itens {
@@ -307,7 +308,7 @@ textarea::placeholder, input::placeholder{
   }
   .skills__descricao {
     padding: 10px 0 0 0;
-    color: #ffffff;
+    color: var(--cor-da-letra);
     font-weight: bold;
   }
   .fonte {
@@ -329,7 +330,7 @@ textarea::placeholder, input::placeholder{
     }
     #linha-horizontal {
       width: 100%;
-      border: 1px solid rgb(37, 0, 44);
+      border: 1px solid var(--cor-de-hover);
     }
 		.formacao {
       display: flex;
@@ -339,7 +340,7 @@ textarea::placeholder, input::placeholder{
     .formacao__subtitulo {
       font-size: 32px;
       text-align: center;
-      color: #ffffff;
+      color: var(--cor-da-letra);
       padding: 2%;
     }
     .formacao__instituicao {
@@ -357,13 +358,13 @@ textarea::placeholder, input::placeholder{
     .formacao__titulo{
       font-size: 20px;
       line-height: 25px;
-      color: #ffffff;
+      color: var(--cor-da-letra);
       padding: 2%;
       text-align: center;
     }
     .formacao__descricao {
       text-align: center;
-      color: white;
+      color: var(--cor-da-letra);
     }
     .experiencia {
       display: flex;
@@ -373,7 +374,7 @@ textarea::placeholder, input::placeholder{
     .experiencia__titulo {
       font-size: 32px;
       text-align: center;
-      color: #ffffff;
+      color: var(--cor-da-letra);
       padding-top: 1.5rem;
     }
     .experiencia__projetos {
@@ -391,39 +392,39 @@ textarea::placeholder, input::placeholder{
     }
     .experiencia__nome {
       font-size: 20px;
-      color: #464646;
+      color: var(--cor-da-letra);
     }
     .experiencia__descricao {
       line-height: 19px;
-      color: #464646;
+      color: var(--cor-da-descricao);
     }
     .experiencia__repositorio {
       width: 105px;
       height: 51px;
       background: none;
-      color: #7d0a8c;
-      border: 1px solid #7d0a8c;
+      color: var(--cor-de-hover);
+      border: 1px solid var(--cor-de-hover);
       border-radius: 10px;
       margin-right: 10px;
     }
     .experiencia__repositorio:hover {
       cursor: pointer;
       font-weight: bold;
-      color: #7d0a8c;
-      border: 2px solid #7d0a8c;
+      color: var(--cor-de-hover);
+      border: 2px solid var(--cor-de-hover);
     }
     .experiencia__demo {
       width: 105px;
       height: 51px;
-      background: #7d0a8c;
-      border: 1px solid #7d0a8c;
+      background: var(--cor-de-hover);
+      border: 1px solid var(--cor-de-hover);
       border-radius: 10px;
-      color: rgb(0, 0, 0);
+      color: var(--cor-de-fundo);
     }
     .experiencia__demo:hover {
       cursor: pointer;
       font-weight: bold;
-      background: #7d0a8c;
+      background: var(--cor-de-hover);
     }
     @media (max-width: 768px){
         .experiencia__projetos {
@@ -438,5 +439,5 @@ textarea::placeholder, input::placeholder{
       }
       .rodape {
         text-align: center;
-        color: #464646;
+        color: var(--cor-da-letra);
       }
