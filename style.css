@@ -1,7 +1,7 @@
 :root{
  --cor-de-fundo: black;
  --cor-da-letra: white;
- --cor-da-descricao: #757575;
+ --cor-da-descricao: #585757;
  --cor-de-hover: #7d0a8c;
 }
 
@@ -13,9 +13,8 @@ body {
   padding: 0;
   line-height: 1;
 }
-
 ol, ul,li {
-  list-style: none;
+  
 }
 a{
   text-decoration: none;
@@ -35,8 +34,9 @@ textarea:focus, input:focus, select:focus {
 	padding: 25px;
 }
 .menu__foto {	
+  display: flex;
 	background: url("./img/fotoperfil.png");
-	background-size: 100%;
+  background-size: 100%;
 	width: 300px;
 	height: 300px;
 	border-radius: 100%;
@@ -44,7 +44,7 @@ visibility: visible;
 }
 .menu__foto:hover {
 	background: url("./img/fotoperfil2.png");
-	background-size: 100%;
+  background-size: 100%;
  
 }
 .menu__principal {
@@ -335,10 +335,9 @@ visibility: visible;
       width: 100%;
       border: 1px solid var(--cor-de-hover);
     }
-		.formacao {
+		.formacao { 
+      position: relative;
       display: flex;
-      align-items: center;
-      padding: 16px;
     }
     .formacao__subtitulo {
       font-size: 32px;
@@ -352,11 +351,14 @@ visibility: visible;
       justify-content: space-around;
       width: 100%;
     }
-    .formacao__caixa {	
+    .formacao__caixa {
+     	
       margin-bottom: 3rem;
     }	
     .formacao__imagem {
-      margin: 30px;
+      width: 150px; 
+      height: 150px;
+      margin: 30px 100px;
     }
     .formacao__titulo{
       font-size: 20px;
@@ -430,7 +432,7 @@ visibility: visible;
       background: var(--cor-de-hover);
     }
     @media (max-width: 768px){
-        .experiencia__projetos {
+        .experiencia__projetos, .skills__itens, .formacao__caixa {
           justify-content: center;
           flex-wrap: wrap;
         }
