@@ -6,6 +6,7 @@
 }
 
 body {
+  min-width: 320px;
   box-sizing: border-box;
   background: var(--cor-de-fundo);
   font-family: 'Raleway';
@@ -318,7 +319,7 @@ visibility: visible;
     font-size: .3rem;
     justify-content: flex-end;
   }
-  @media (max-width: 768px){
+  @media (max-width: 768px),(max-width: 320px){
       .skills {
         display: flex;
         flex-direction: column;
@@ -326,10 +327,8 @@ visibility: visible;
         padding: 16px;
       }
       .skills__item {
-        width: 97%;
-        height: 110px;
-        margin: 20%;
-      }
+        margin: 60px;
+    }
     }
     #linha-horizontal {
       width: 100%;
@@ -431,7 +430,7 @@ visibility: visible;
       font-weight: bold;
       background: var(--cor-de-hover);
     }
-    @media (max-width: 768px){
+    @media (max-width: 768px),(max-width: 320px){
         .experiencia__projetos, .skills__itens, .formacao__caixa {
           justify-content: center;
           flex-wrap: wrap;
@@ -441,7 +440,13 @@ visibility: visible;
           height: 100%;
           order: -1;
         }
+        .formacao__imagem {
+          width: 100px;
+          height: 100px;
+          margin: auto;
+          padding: 8px;
       }
+    }
       .rodape {
         text-align: center;
         color: var(--cor-da-letra);
