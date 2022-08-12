@@ -76,7 +76,7 @@ visibility: visible;
 	cursor: pointer;
 	font-weight: bold;
 }
-.formacao {
+.formacao__caixa {
       align-items: center;
 }
 @media (max-width: 768px){
