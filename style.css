@@ -14,6 +14,9 @@ body {
   padding: 0;
   line-height: 1;
 }
+ol, ul,li {
+  
+}
 a{
   text-decoration: none;
 }
@@ -316,7 +319,7 @@ visibility: visible;
     font-size: .3rem;
     justify-content: flex-end;
   }
-  @media (max-width: 768px),(min-width: 320px){
+  @media (max-width: 768px),(max-width: 320px){
       .skills {
         display: flex;
         flex-direction: column;
@@ -427,7 +430,7 @@ visibility: visible;
       font-weight: bold;
       background: var(--cor-de-hover);
     }
-    @media (max-width: 768px),(min-width: 320px){
+    @media (max-width: 768px),(max-width: 320px){
         .experiencia__projetos, .skills__itens, .formacao__caixa {
           justify-content: center;
           flex-wrap: wrap;
