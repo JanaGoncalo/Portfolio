@@ -334,7 +334,8 @@ visibility: visible;
       width: 100%;
       border: 1px solid var(--cor-de-hover);
     }
-		.formacao { 
+     .formacao { 
+      justify-content: space-around;		
       position: relative;
       display: flex;
     }
