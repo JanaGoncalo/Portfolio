@@ -14,9 +14,6 @@ body {
   padding: 0;
   line-height: 1;
 }
-ol, ul,li {
-  
-}
 a{
   text-decoration: none;
 }
@@ -76,8 +73,6 @@ visibility: visible;
 	cursor: pointer;
 	font-weight: bold;
 }
-
-}
 @media (max-width: 768px){
 	.menu {
 		display: flex;
@@ -107,10 +102,6 @@ visibility: visible;
 		display: flex;
 		justify-content: center;
 	}
-	.formacao__caixa {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 /*Mobile First*/
@@ -325,7 +316,7 @@ visibility: visible;
     font-size: .3rem;
     justify-content: flex-end;
   }
-  @media (max-width: 768px),(max-width: 320px){
+  @media (max-width: 768px),(min-width: 320px){
       .skills {
         display: flex;
         flex-direction: column;
@@ -357,7 +348,8 @@ visibility: visible;
       width: 100%;
     }
     .formacao__caixa {
-	
+     	
+      margin-bottom: 3rem;
     }	
     .formacao__imagem {
       width: 150px; 
@@ -435,7 +427,7 @@ visibility: visible;
       font-weight: bold;
       background: var(--cor-de-hover);
     }
-    @media (max-width: 768px),(max-width: 320px){
+    @media (max-width: 768px),(min-width: 320px){
         .experiencia__projetos, .skills__itens, .formacao__caixa {
           justify-content: center;
           flex-wrap: wrap;
