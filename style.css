@@ -77,6 +77,11 @@ visibility: visible;
 	font-weight: bold;
 }
 .formacao__caixa {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
       align-items: center;
 }
 @media (max-width: 768px){
@@ -354,7 +359,7 @@ visibility: visible;
       width: 100%;
     }
     .formacao__caixa {
-     	
+     
       margin-bottom: 3rem;
     }	
     .formacao__imagem {
