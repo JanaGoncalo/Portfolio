@@ -76,6 +76,9 @@ visibility: visible;
 	cursor: pointer;
 	font-weight: bold;
 }
+.formacao {
+      align-items: center;
+}
 @media (max-width: 768px){
 	.menu {
 		display: flex;
