@@ -78,11 +78,8 @@ visibility: visible;
 }
 .formacao__caixa {
 	display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 5%;
-      align-items: center;
+    justify-content: space-around;
 }
 @media (max-width: 768px){
 	.menu {
@@ -113,6 +110,10 @@ visibility: visible;
 		display: flex;
 		justify-content: center;
 	}
+	.formacao__caixa {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /*Mobile First*/
@@ -359,8 +360,9 @@ visibility: visible;
       width: 100%;
     }
     .formacao__caixa {
-     
-      margin-bottom: 3rem;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     }	
     .formacao__imagem {
       width: 150px; 
