@@ -76,10 +76,7 @@ visibility: visible;
 	cursor: pointer;
 	font-weight: bold;
 }
-.formacao__caixa {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
 }
 @media (max-width: 768px){
 	.menu {
@@ -360,9 +357,7 @@ visibility: visible;
       width: 100%;
     }
     .formacao__caixa {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+	
     }	
     .formacao__imagem {
       width: 150px; 
